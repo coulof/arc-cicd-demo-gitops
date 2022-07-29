@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo
+  namespace: todos-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo
+    spec:
+      containers:
+      - image: coulof/clock:hostname
+        imagePullPolicy: IfNotPresent
+        name: clock
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
