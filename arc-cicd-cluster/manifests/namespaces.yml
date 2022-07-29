@@ -12,3 +12,4 @@ kind: Namespace
 apiVersion: v1
 metadata:
   name: todos-xxx
+apiVersion: apps/v1

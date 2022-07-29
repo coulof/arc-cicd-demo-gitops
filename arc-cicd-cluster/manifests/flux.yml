@@ -1,7 +1,7 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta1	
 kind: Provider	
 metadata:	
-  name: flux-system	
+  name: my-github
   namespace: flux-system	
 spec:	
   type: github	
@@ -37,3 +37,4 @@ spec:
       name: '*'
     - kind: Kustomization
       name: '*'
+
