@@ -11,8 +11,4 @@ metadata:
 kind: Namespace
 apiVersion: v1
 metadata:
-<<<<<<< Updated upstream
   name: todos-azure
-=======
-  name: todos-trial
->>>>>>> Stashed changes
